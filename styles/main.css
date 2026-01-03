@@ -1,0 +1,67 @@
+.sidebar-main {
+  display: flex;
+  direction: row;
+  padding-left: max(50px, 5%);
+  padding-right: max(50px, 5%);
+  justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin-left: 5%;
+}
+
+.topics {
+  padding: 20px 20px;
+  padding-bottom: 5px;
+}
+
+.headline {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.content {
+  font-size: larger;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 2px;
+  background-color: cornflowerblue;
+  border-radius: 2px;
+  width: 96%;
+  margin: 15px 0;
+}
+
+.marked {
+  color: cornflowerblue;
+  font-weight: bolder;
+}
+
+.zeitstrahl {
+  width: 80%;
+  border-radius: 30px;
+}
+
+/*
+@media (min-width: 700px) {
+  .main {
+    padding-left: max(300px, 30%);
+    padding-right: max(50px, 5%);
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding-left: max(50px, 5%);
+    padding-right: max(50px, 5%);
+  }
+}
+*/
