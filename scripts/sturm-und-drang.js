@@ -4,223 +4,222 @@ let isAnswered = false;
 
 const questions = [
   {
-    frage: 'Wann begann und endete die Aufklärung?',
+    frage: 'Wann begann und endete der Sturm und Drang?',
     answers: [
-      { text: '1680 bis 1810', correct: false },
-      { text: '1785 bis 1915', correct: false },
-      { text: '1685 bis 1815', correct: true },
+      { text: '1765 bis 1785', correct: true },
+      { text: '1760 - 1780', correct: false },
+      { text: '1665 bis 1685', correct: false },
     ],
   },
   {
-    frage: 'Welches zentrale Prinzip verfolgte die Aufklärung?',
+    frage: 'Welche Prinzipien standen im Sturm und Drang im Mittelpunkt?',
     answers: [
-      { text: 'Emotion', correct: false },
-      { text: 'Vernunft', correct: true },
-      { text: 'Glaube', correct: false },
-    ],
-  },
-  {
-    frage: 'Was ist das Symbol der Aufklärung?',
-    answers: [
-      { text: 'Dunkelheit', correct: false },
-      { text: 'Licht', correct: true },
-      { text: 'Feuer', correct: false },
-    ],
-  },
-  {
-    frage: 'Welches lateinische Motto ist mit der Aufklärung eng verbunden?',
-    answers: [
-      { text: 'Carpe diem', correct: false },
-      { text: 'Sapere aude', correct: true },
-      { text: 'Veni vidi vici', correct: false },
-    ],
-  },
-  {
-    frage: 'Welchen politischen Einfluss hatte die Aufklärung?',
-    answers: [
-      {
-        text: 'Aufklärer forderten Freiheitsrechte, Volkssouveränität und Bildungsmöglichkeiten',
-        correct: true,
-      },
-      {
-        text: 'Aufklärer forderten Absolutismus und Feudalismus',
-        correct: false,
-      },
-      {
-        text: 'Aufklärer forderten die Abschaffung der Todesstrafe',
-        correct: false,
-      },
+      { text: 'Vernunft und Ordnung', correct: false },
+      { text: 'Emotion und Leidenschaft', correct: true },
+      { text: 'Glaube und Religion', correct: false },
     ],
   },
   {
     frage:
-      'Welche der folgenden Personen war ein wichtiger Denker der Aufklärung?',
+      'Gegen welche Epoche richtete sich der Sturm und Drang hauptsächlich?',
     answers: [
-      {
-        text: 'Martin Luther',
-        correct: false,
-      },
-      {
-        text: 'René Descartes',
-        correct: true,
-      },
-      {
-        text: 'Alexander der Große',
-        correct: false,
-      },
+      { text: 'Barock', correct: false },
+      { text: 'Klassik', correct: false },
+      { text: 'Aufklärung', correct: true },
     ],
   },
   {
-    frage: 'Zu welcher Entwicklung trug die Aufklärung bei?',
+    frage: 'Welche Rolle spielte die Vernunft im Sturm und Drang?',
     answers: [
-      {
-        text: 'Verstärkte Autorität der Kirche',
-        correct: false,
-      },
-      {
-        text: 'Unterdrückung der Wissenschaft',
-        correct: false,
-      },
-      {
-        text: 'Demokratisches Denken',
-        correct: true,
-      },
+      { text: 'Sie stand im Mittelpunkt', correct: false },
+      { text: 'Sie wurde abgelehnt', correct: true },
+      { text: 'Sie war wichtiger als Gefühle', correct: false },
     ],
   },
   {
-    frage: 'Welche Rolle spielt der Mensch im aufklärerischen Denken?',
+    frage: 'Welches Ideal prägte den Sturm und Drang besonders?',
     answers: [
       {
-        text: 'Rationales Individuum',
-        correct: true,
-      },
-      {
-        text: 'Untertan',
+        text: 'Der gebildete Bürger',
         correct: false,
       },
       {
-        text: 'schöpferisches Genie',
-        correct: false,
-      },
-    ],
-  },
-  {
-    frage: 'Welche philosophische Richtung basierte auf Sinneserfahrung?',
-    answers: [
-      {
-        text: 'Rationalismus',
+        text: 'Der starke Ritter',
         correct: false,
       },
       {
-        text: 'Pragmatismus',
-        correct: false,
-      },
-      {
-        text: 'Empirismus',
+        text: 'Das schöperische Genie',
         correct: true,
       },
     ],
   },
   {
-    frage: 'Was war eine wichtige Aufgabe der aufklärerischen Literatur?',
+    frage: 'Was bedeutet der Begriff „Genie“ im Sturm und Drang?',
     answers: [
       {
-        text: 'Geheimnisse hüten',
+        text: 'Ein gebildeter Gelehrter',
         correct: false,
       },
       {
-        text: 'Adel unterhalten',
+        text: 'Ein Mensch, der sich an Regeln hält',
         correct: false,
       },
       {
-        text: 'Wissen verbreiten',
+        text: 'Ein freier, unabhängiger und regellose Mensch',
         correct: true,
       },
     ],
   },
   {
-    frage:
-      'An welche Zielgruppe richtete sich die Literatur der Aufklärung besonders?',
+    frage: 'Welche Themen sind typisch für den Sturm und Drang?',
     answers: [
       {
-        text: 'Adel',
-        correct: false,
-      },
-      {
-        text: 'Bürgertum',
+        text: 'Freiheit und Emotionen',
         correct: true,
       },
       {
-        text: 'Bauern',
+        text: 'Moral und Ordung',
+        correct: false,
+      },
+      {
+        text: 'Reichtum und Macht',
         correct: false,
       },
     ],
   },
   {
-    frage: 'Worin bestand die Besonderheit der Lyrik der Aufklärung?',
+    frage: 'Welcher Autor gilt als Hauptvertreter des Sturm und Drang?',
     answers: [
       {
-        text: 'Formenvielfalt',
-        correct: true,
-      },
-      {
-        text: 'Alte Sprache',
+        text: 'Gotthold Ephraim Lessing',
         correct: false,
       },
       {
-        text: 'bürgerliche Themen',
+        text: 'Albert Einstein',
+        correct: false,
+      },
+      {
+        text: 'Johann Wolfgang von Goethe',
+        correct: true,
+      },
+    ],
+  },
+  {
+    frage: 'Welches Werk gehört zum Sturm und Drang?',
+    answers: [
+      {
+        text: 'Nathan der Weise',
+        correct: false,
+      },
+      {
+        text: 'Die Leiden des jungen Werther',
+        correct: true,
+      },
+      {
+        text: 'Faust',
         correct: false,
       },
     ],
   },
   {
-    frage: 'Was ist kein berühmtes Drama der Aufklärung?',
+    frage: 'Wie ist die Sprache im Sturm und Drang meist gestaltet?',
     answers: [
       {
-        text: '„Emilia Galotti“',
+        text: 'Gefühlsbetont und leidenschaftlich',
+        correct: true,
+      },
+      {
+        text: 'Stark geregelt und streng',
         correct: false,
       },
       {
-        text: '„Nathan der Weise“',
+        text: 'Nüchtern und sachlich',
+        correct: false,
+      },
+    ],
+  },
+  {
+    frage: 'Woher hat der Sturm und Drang seinen Namen?',
+    answers: [
+      {
+        text: 'Wegen politischer Kriege',
         correct: false,
       },
       {
-        text: '„Kabale und Liebe“',
+        text: 'Wegen Naturkatastrophen',
+        correct: false,
+      },
+      {
+        text: 'Von einem Drama namens „Sturm und Drang“',
         correct: true,
       },
     ],
   },
   {
     frage:
-      'Welche Erzählform spielte häufig in der Epik der Aufklärung eine Rolle?',
+      'Welche Zielgruppe sprach die Literatur des Sturm und Drang besonders an?',
     answers: [
       {
-        text: 'Märchen',
-        correct: false,
-      },
-      {
-        text: 'Bildungsroman',
+        text: 'Das junge, gebildete Bürgertum',
         correct: true,
       },
       {
-        text: 'Heldensage',
+        text: 'Den Adel',
+        correct: false,
+      },
+      {
+        text: 'Bauern und Landbevölkerung',
         correct: false,
       },
     ],
   },
   {
-    frage: 'Was zeigt die Ringparabel im Kontext der Aufklärung?',
+    frage: 'Was war ein zentraler Leitgedanke des Sturm und Drang?',
     answers: [
       {
-        text: 'Keine Religion ist beweisbar die einzig wahre',
-        correct: true,
-      },
-      {
-        text: 'Wahre Wertschätzung entsteht aus Fleiß, Ordnung und Gemeinnutz',
+        text: 'Pflichtbewusstsein',
         correct: false,
       },
       {
-        text: 'Diese Frage ist die Vorletzte Frage im Quiz',
+        text: 'Freiheit und Individualität',
+        correct: true,
+      },
+      {
+        text: 'Religiöse Disziplin',
+        correct: false,
+      },
+    ],
+  },
+  {
+    frage: 'Was war ein häufiges Ende von Dramen im Sturm-und-Drang?',
+    answers: [
+      {
+        text: 'Happy End',
+        correct: false,
+      },
+      {
+        text: 'Tod des Helden als Rebellion gegen die Gesellschaft',
+        correct: true,
+      },
+      {
+        text: 'Politische Revolution',
+        correct: false,
+      },
+    ],
+  },
+  {
+    frage: 'Was war charakteristisch für die Lyrik des Sturm und Drang?',
+    answers: [
+      {
+        text: 'Freier Rhythmus, unregelmäßiges Reimschema',
+        correct: true,
+      },
+      {
+        text: 'Strenge Formvorgaben',
+        correct: false,
+      },
+      {
+        text: 'Religiöse Themen',
         correct: false,
       },
     ],
