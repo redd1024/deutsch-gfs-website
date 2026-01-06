@@ -16,7 +16,8 @@
 .sidebar-button,
 .sidebar-sub-button {
   display: flex;
-  height: 50px;
+  min-height: 45px;
+  padding: 5px 0;
   width: 100%;
   font-size: larger;
   font-weight: bolder;

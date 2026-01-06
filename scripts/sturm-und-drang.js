@@ -273,7 +273,7 @@ function checkAnswer() {
   const checked = document.querySelector('input[name="antwort"]:checked');
 
   if (!checked) {
-    alert('Please select an answer!');
+    alert('Bitte wähle eine Antwortmöglichkeit!');
     return;
   }
 
@@ -299,6 +299,9 @@ function checkAnswer() {
   document
     .querySelector('.js-überprüfen-button')
     .classList.remove('überprüfen-button');
+  document
+    .querySelectorAll('input[name="antwort"]')
+    .forEach((input) => (input.disabled = true));
 }
 
 function nextQuestion() {

@@ -12,7 +12,7 @@
 }
 
 .header {
-  height: 60px;
+  height: 100%;
   width: 60%;
   min-width: 480px;
   background-color: rgba(98, 109, 112, 1);
