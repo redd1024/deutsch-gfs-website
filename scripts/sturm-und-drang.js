@@ -7,7 +7,7 @@ const questions = [
     frage: 'Wann begann und endete der Sturm und Drang?',
     answers: [
       { text: '1765 bis 1785', correct: true },
-      { text: '1760 - 1780', correct: false },
+      { text: '1760 bis 1780', correct: false },
       { text: '1665 bis 1685', correct: false },
     ],
   },
